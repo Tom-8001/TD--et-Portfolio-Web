@@ -1,3 +1,104 @@
-h1 {   
+.h1-style {   
     text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.h2-style {
+    color: #34495e;
+    font-size: 2em;
+    margin-top: 20px;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+}
+
+.h3-style {
+    color: #7f8c8d;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.h4-style {
+    color: #95a5a6;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.h5-style {
+    color: #bdc3c7;
+    font-size: 1.1em;
+}
+
+.h6-style {
+    color: #ecf0f1;
+    font-size: 0.9em;
+    background-color: #34495e;
+    padding: 10px;
+}
+
+.p-style {
+    color: #2c3e50;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.span-style {
+    background-color: #ecf0f1;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.input-style {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 1em;
+    display: block;
+    width: 300px;
+}
+
+.input-style:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.checkbox-radio-style {
+    width: auto;
+    display: inline;
+    margin-right: 10px;
+}
+
+.button-style {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+    width: auto;
+}
+
+.button-style:hover {
+    background-color: #2980b9;
+}
+
+.color-style {
+    width: 50px;
+    height: 40px;
+    border: 2px solid #3498db;
+}
+
+.range-style {
+    width: 300px;
 }
