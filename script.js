@@ -1,17 +1,13 @@
-const div = document.querySelector('body');
-const header = document.querySelector('header');
-const nivScroll = document.getElementById('nivScroll');
+const form = document.getElementById('myForm');
+const output = document.getElementById('output');
 
-//on change la couleur de fond du header au scroll
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-        header.style.backgroundColor = 'rgba(172, 15, 15, 0.8)';
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+    const inputValue = document.getElementById('textInput').value;
+    if (inputValue.trim() === '') {
+        output.innerHTML = '<p style="color: red;">Erreur : le champ ne peut pas être vide.</p>';
     } else {
-        header.style.backgroundColor = 'rgba(0, 0, 0)';
+        output.innerHTML = '<p>Vous avez saisi : ' + inputValue + '</p>';
     }
-});
-
-//on affiche en % en texte le niveau de scroll en pourcentage a nivScroll
-window.addEventListener('scroll', () => {
-    nivScroll.textContent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100) + '%';
+    form.reset(); // Réinitialise le formulaire
 });
