@@ -1,8 +1,8 @@
-const div = document.getElementById("div");
+const div = document.querySelector('div');
+const position = document.querySelector('#position');
 
-const couleur = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lightgray"];
-
-//on change la couleur de fond du div au clic avec une fonction fléchée
-div.addEventListener("click", () => {
-    div.style.backgroundColor = couleur[Math.floor(Math.random() * couleur.length)];
+//on récupère la position de la souris dans la div uniquement
+div.addEventListener('mousemove', () => {
+    console.log(`X: ${event.offsetX}, Y: ${event.offsetY}`);
+    position.textContent = `X: ${event.offsetX}, Y: ${event.offsetY}`;
 });
